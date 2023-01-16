@@ -1,0 +1,200 @@
+@import '../../assets/styles/stylus/mixins.styl'
+.header
+    position relative
+    background rega(7,17,27,.5)
+    // color white
+    overflow hidden
+    .content-wrapper
+        position relative
+        padding 24px 12px 18px 24px
+        .avatar
+            vertical-align: top
+            display: inline-block
+            width: 64px
+            height: 64px
+            img
+                width: 100%
+        .content
+            display: inline-block
+            margin-left: 16px
+            padding: 2px 0 2px
+            .title
+                .brand
+                    display: inline-block
+                    width: 30px
+                    height: 18px
+                    background-repeat: no-repeat
+                    background-size: 30px 18px 
+                    vertical-align: middle
+                    bg-image(brand)
+                .name
+                    display: inline-block
+                    margin-left: 6px
+                    font-size: 16px
+                    line-height: 18px
+                    font-weight: bold
+            .descripition
+                margin-top: 8px
+                margin-bottom: 10px
+                font-size: 12px
+                font-weight: 200
+                line-height: 12px
+            .support
+                .icon
+                    display inline-block
+                    width: 12px
+                    height: 12px
+                    background-size: 12px 12px
+                    background-repeat: no-repeat
+                    vertical-align: middle
+                .decrease
+                    bg-image(decrease_1)
+                .discount
+                    bg-image(discount_1)
+                .guarantee
+                    bg-image(guarantee_1)
+                .invoice
+                    bg-image(invoice_1)
+                .special
+                    bg-image(special_1)
+                .text
+                    display: inline-block
+                    margin-left: 4px
+                    font-size: 10px
+                    line-height: 12px
+                    font-weight: 200
+        .supports_count
+            background: rgba(0,0,0,.2)
+            border-radius: 8px
+            position: absolute
+            right: 12px
+            bottom: 18px
+            height: 24px
+            padding: 4px 8px
+            box-sizing: border-box
+            .count
+                font-size: 10px
+                line-height: 12px
+                font-weight: 200
+                vertical-align: middle
+    .bulletin-wrapper
+        position relative
+        padding: 0 12px
+        white-space: nowrap
+        overflow: hidden
+        text-overflow: ellipsis
+        height: 28px
+        line-height: 28px
+        background: rgba(7,17,27,.2)
+        .bulletin-title
+            display: inline-block
+            width: 22px
+            height: 12px
+            background-repeat: no-repeat 
+            background-size: 22px 12px
+            vertical-align: middle
+            bg-image(bulletin)
+        .bulletin-text
+            margin: 0 4px
+            font-size: 10px
+            font-weight: 200
+        .icon-keyboard_arrow_right
+            position: absolute
+            top: 7px
+            right: 2px
+    .background
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        z-index: -1
+        filter: blur(10px)//模糊
+        img
+            width: 100%
+            height: 100%
+    .detail
+        position: fixed
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        z-index: 100
+        background: rgba(7,17,27,.8)
+        text-align: center
+        color:white
+        .detail-wrapper
+            margin: 80px 25px 20px
+            .name
+                font-size: 26px
+                font-weight: 700
+                line-height: 32px
+                margin-bottom: 20px
+            .rating
+                height: 30px
+                margin-bottom: 10px
+            .support
+                .tittle
+                    position relative
+                    height: 30px
+                    .line
+                        width: 80px
+                        display: inline-block
+                        position: absolute
+                        top:-5px
+                        border-1px(rgba(255,255,255,.2))
+                    .text
+                        padding: 20px
+                        font-size: 22px
+                .content
+                    padding-bottom: 18px
+                    li
+                        display: flex
+                        padding-bottom: 12px
+                        .icon
+                            width: 12px
+                            height: 12px
+                            background-size: 12px 12px
+                            background-repeat: no-repeat
+                            vertical-align: middle
+                        .decrease
+                            bg-image(decrease_1)
+                        .discount
+                            bg-image(discount_1)
+                        .guarantee
+                            bg-image(guarantee_1)
+                        .invoice
+                            bg-image(invoice_1)
+                        .special
+                            bg-image(special_1)
+                        .text
+                            margin-left: 4px
+                            font-size: 10px
+                            line-height: 12px
+                            font-weight: 200
+            .bulletin
+                .tittle
+                    position relative
+                    height: 30px
+                    .line
+                        width: 80px
+                        display: inline-block
+                        position: absolute
+                        top:-5px
+                        border-1px(rgba(255,255,255,.2))
+                    .text
+                        padding: 20px
+                        font-size: 22px
+                .text
+                    font-size: 14px
+                    line-height: 25px
+                    text-align: left
+        .detail-close
+            font-size: 40px
+
+
+
+
+
+
+                        
